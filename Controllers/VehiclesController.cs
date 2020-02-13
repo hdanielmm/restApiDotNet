@@ -12,13 +12,13 @@ namespace CheckMyVehicle.Controllers
         public static List<Vehicle> vehicles = InitVehicles();
         
 
-        [HttpGet("Vehicle/")]
+        [HttpGet("/Vehicle")]
         public IEnumerable<Vehicle> Get()
         {
             return vehicles;
         }
         
-        [HttpPost]
+        [HttpPost("/Vehicle")]
         public void Post([FromBody] Vehicle vehicle)
         {
             vehicles.Add(vehicle);
