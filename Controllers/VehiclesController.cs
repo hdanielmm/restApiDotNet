@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
-
+using CheckMyVehicle.Connector;
 using CheckMyVehicle.Models;
 
 namespace CheckMyVehicle.Controllers
@@ -11,12 +11,17 @@ namespace CheckMyVehicle.Controllers
     {
         public static List<Vehicle> vehicles = InitVehicles();
         
-
-        [HttpGet("/Vehicle")]
-        public IEnumerable<Vehicle> Get()
-        {
-            return vehicles;
+        [HttpGet("/")]
+        public IEnumerable<Vehicle> Get(){
+            Conn mysqlGet = new Conn();
+            return mysqlGet.VehicleList();
         }
+
+        // [HttpGet("/Vehicle")]
+        // public IEnumerable<Vehicle> Get()
+        // {
+        //     return vehicles;
+        // }
         
         [HttpPost("/Vehicle")]
         public void Post([FromBody] Vehicle vehicle)

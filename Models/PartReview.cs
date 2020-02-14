@@ -8,7 +8,11 @@ namespace CheckMyVehicle.Models
         public DateTime DateReview { get; set; }
         public string Diagnosis { get; set; }
         public int VehicleReviewId { get; set; }
-        public int PartId { get; set; }
-        public int EmplyeeId { get; set; }
+        public int VehiclePartId { get; set; }
+        public int EmployeeId { get; set; }
+
+        // public VehicleReview VehicleReview { get; set; }
+        // public VehiclePart VehiclePart {get; set; }
+        // public Employee Employee { get; set; }
     }
 }

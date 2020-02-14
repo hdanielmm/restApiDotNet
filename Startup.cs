@@ -27,8 +27,15 @@ namespace CheckMyVehicle
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // services.AddDbContext<CheckMyVehicleContext>(opt => 
+            //     opt.UseInMemoryDatabase("CheckMyVehicle"));
+            
+            // services.AddDbContext<CheckMyVehicleContext>(opt => 
+            //     opt.UseMySQL("server=localhost;database=sonar;uid=sonar;pwd=sonar"));
+
             services.AddDbContext<CheckMyVehicleContext>(opt => 
-                opt.UseInMemoryDatabase("CheckMyVehicle"));
+                opt.UseMySQL(Configuration.GetConnectionString("mysqlConnection")));
+            
             services.AddControllers();
         }
 
@@ -50,6 +57,9 @@ namespace CheckMyVehicle
             {
                 endpoints.MapControllers();
             });
+
+            // var DB = app.ApplicationServices.GetRequiredService<CheckMyVehicleContext>();
+            // DB.Database.EnsureCreated();
         }
     }
 }
