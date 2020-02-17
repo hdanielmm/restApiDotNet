@@ -142,3 +142,5 @@
 /home/daniel/restApi/CheckMyVehicle/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
 /home/daniel/restApi/CheckMyVehicle/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
 /home/daniel/restApi/CheckMyVehicle/bin/Debug/netcoreapp3.1/Pomelo.Data.MySql.dll
+/home/daniel/restApi/CheckMyVehicle/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+/home/daniel/restApi/CheckMyVehicle/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll

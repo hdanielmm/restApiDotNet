@@ -11,8 +11,8 @@ namespace CheckMyVehicle.Models
         public int VehiclePartId { get; set; }
         public int EmployeeId { get; set; }
 
-        // public VehicleReview VehicleReview { get; set; }
-        // public VehiclePart VehiclePart {get; set; }
-        // public Employee Employee { get; set; }
+        public VehicleReview VehicleReview { get; set; }
+        public VehiclePart VehiclePart {get; set; }
+        public Employee Employee { get; set; }
     }
 }

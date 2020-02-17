@@ -34,7 +34,7 @@ namespace CheckMyVehicle
             //     opt.UseMySQL("server=localhost;database=sonar;uid=sonar;pwd=sonar"));
 
             services.AddDbContext<CheckMyVehicleContext>(opt => 
-                opt.UseMySQL(Configuration.GetConnectionString("mysqlConnection")));
+                opt.UseMySQL(Configuration.GetConnectionString("Default")));
             
             services.AddControllers();
         }

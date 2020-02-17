@@ -10,8 +10,7 @@ namespace CheckMyVehicle.Connector
         private string connstring;
         public Conn()
         {
-            //connstring = @"server=sql12.freemysqlhosting.net;userid=;password=;database=sql12174637";
-            connstring = @"server=localhost;userid=sonar;password=sonar;database=sonar";
+            connstring = @"server=localhost;user=root;password=sonarpasswtest;database=sonar;";
         }
 
         public List<Vehicle> VehicleList()

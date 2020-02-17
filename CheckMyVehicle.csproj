@@ -18,9 +18,9 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.19" />
-    <!-- <PackageReference Include="MySqlConnection" Version="1.0.1" /> -->
     <PackageReference Include="MySqlConnector" Version="0.61.0" />
     <PackageReference Include="Pomelo.Data.MySql" Version="1.0.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
   </ItemGroup>
 
 
